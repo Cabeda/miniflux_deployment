@@ -1,0 +1,10 @@
+services:
+  app:
+    image: miniflux/miniflux:latest
+    healthcheck:
+      test: ["CMD", "/usr/bin/miniflux", "-healthcheck", "auto"]
+    ports:
+      - "80:8080"
+    environment:
+      # - DATABASE_URL=
+      - RUN_MIGRATIONS=1
