@@ -1,4 +1,4 @@
-FROM miniflux/miniflux:latest
+FROM miniflux/miniflux:2.3.0
 
 # Requires DATABASE_URL=
 ENV BASE_URL=https://feed.cabeda.dev
